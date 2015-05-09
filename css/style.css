@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.color-bar{
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 2px;
+	z-index: 1031;
+}
+.color-bar > .color-bar-section{
+	width: 4%;
+	display: block;
+	float: left;
+	height: 2px;
+}
+.color-bar-section{
+	background: #F2503A;
+}
+.color-bar > .color-bar-section:nth-child(5n-3){
+	background: #FAC000;
+}
+.color-bar > .color-bar-section:nth-child(5n-2){
+	background: #1685C5;
+}
+.color-bar > .color-bar-section:nth-child(5n-1){
+	background: #2EB863;
+}
+.color-bar > .color-bar-section:nth-child(5n){
+	background: #9B61B8;
+}
+/*************
+color-bar END
+**************/
+
+.firstscetin{
+	background-image: url('../img/headerCultureTalks.png');
+	background-size: cover;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(36, 39, 41, 0.88);
+}
+.navbar-default{
+	background: transparent;
+	border: none;
+	margin-top: 10px;
+}
+.navbar-nav{
+	float: right;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus{
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bolder;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:active,
+.navbar-default .navbar-nav>.open>a:focus{
+	background: transparent;
+	color: #fff;
+}
+.dropdown-menu h6{
+	margin-left: 11px;
+	cursor:default;
+	color: rgba(84, 84, 84, .7);
+}
+/*************
+NAVBAR END
+**************/
+.page-title{
+	color: #fff;
+	text-align: center;
+}
+.page-title h1{
+	font-size: 50px;
+	font-weight: bold;
+	margin:40px 0 12px 0;
+}
+.page-title p{
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 28px;
+	margin-bottom: 55px;
+}
+.firstscetin .start-btn,
+.firstscetin .learn-btn{
+	background: #2eb863;
+	padding: 16px 0 18px;
+	font-size: 22px;
+	border: none;
+	margin-bottom: 5px;
+	box-shadow: 0 3px 0 #1f7a42;
+}
+.firstscetin .learn-btn{
+	background: transparent;
+	margin-bottom: 0;
+	color: #fff;
+	border: 2px solid #D3D3D3;
+	box-shadow: none;
+	margin-bottom: 100px;
+}
+/*******************
+First Section END
+********************/
+.persona-list{
+	background-color: #EAEAEA;
+	padding: 50px 0;
+}
+.thumbnail-persona{
+	background: #EAEAEA;
+	border: none;
+	float: left;
+	/*text-align: center;*/
+	/*margin-left: 110px;*/
+	padding-top: 50px;
+}
+.thumbnail-persona h4{
+	font-size: 20px;
+	margin-left: 18px;
+}
+.thumbnail-persona h4 span{
+	margin-left: -38px;
+}
+.thumbnail-persona>img{
+	margin: 0;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+.navbar-nav{
+    float: left;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+	color: #545454;
+}
+.dropdown-menu h6{
+	color: #545454;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus{
+	color: #545454;
+	font-size: 1.1em;
+	font-weight: bolder;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.dropdown-menu h6:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover
+{
+	color: #fff;
+}
+.navbar-default{
+	background: rgba(0, 0, 0, .4);
+}
+/*****************
+MOBILE NAVBAR END
+******************/
+.firstscetin .start-btn,
+.firstscetin .learn-btn{
+	font-size: 13px;
+}
+.firstscetin .learn-btn span{
+	display: block;
+}
+.page-title h1{
+	font-size: 35px;
+	font-weight: bold;
+	/*margin:40px 0 12px 0;*/
+}
+.page-title p{
+	font-size: 13px;
+	/*margin-bottom: 55px;*/
+}
+}
